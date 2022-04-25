@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name ="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel = "stylesheet" href = "ContactCSS.css">
+</head>
+<body>
+ <div id="overlay">
+    <form id  = "contact-form" action="mailto:rorina@academic.rrc.ca">
+        <h1>Contact Me</h1>
+        <label for="name" class="customerInput">Name:</label>
+        <input type = "text" id = "name" placeholder="Enter your name" >
+        <p class="customerInput_error error" id="name_error">* Please enter your name.</p>
+
+        <label for="email" class="customerInput">Email:</label>
+        <input type = "text" id = "Email" placeholder="Enter your email">
+        <p class="customerInput_error error" id="email_error">* Please enter your email.</p>
+
+        <label for = "phone" class="customerInput"> Phone Number:</label>
+        <input type="tel" id="phone" placeholder="Enter your Phone Number">
+        <p class="customerInput_error error" id="phone_error">* Please enter your phone.</p>
+
+        <label for = "message"> Message:</label>
+        <textarea id ="message" placeholder="Enter your message here" rows="6"></textarea>
+        <p class="customerInput_error error" id="message_error">* Please enter your message.</p>
+
+        <div class="center">
+            <input type="submit" value="Submit">
+            <p id="Message Sent"></p>
+        </div>
+        <button type="reset" id="clear">Clear Form</button>
+    </form>
+ </div>
+    <script src = "script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/*
+**
+** Rhomill Orina
+** Description: Contact Form for my project three.
+** Date: 04/24/22
+** Creation: 04/24/22
+ */
+
+*{
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-image: url("Img/SpiderVerseMiles.jpg");
+    background-repeat: no-repeat;
+    background-size: 200vh;
+    object-fit: cover;
+    margin: 0;
+}
+
+form{
+    max-width: 550px;
+    width: 90%;
+    background: azure;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(55, 68, 150, 0.4);
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+}
+
+label {
+    display:block;
+    margin: 20px 0;
+}
+
+input, button, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-buttom: 1px solid #D3D3D3;
+}
+
+input[type="text"]:focus,textarea:focus{
+    border-bottom: 1px solid rgb(19, 38, 147);
+}
+input[type="tel"]:focus,textarea:focus{
+    border-bottom: 1px solid rgb(19, 38, 147);
+}
+
+textarea::-webkit-scrollbar{
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgb(19, 38, 147);
+}
+
+.center{
+    text-align: center;
+}
+
+input[type="submit"]{
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right, rgb(72, 99, 218), rgb(19, 38, 147));
+    color:white;
+    font-size: 17px;
+    border-radius: 3px;
+}
+
+.error{
+    color: red;
+}
+
+.error-border{
+    border-bottom: 1px solid red;
+}
+#message send{
+    color: darkgreen;
+}
+
+form p{
+    font-size: small;
+    margin-top: 2px;
+}
+
+
